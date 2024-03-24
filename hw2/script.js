@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateDots() {
         dots.innerHTML = "";
         slides.forEach((_, index) => {
-            let dot = document.createElement("span");
+            const dot = document.createElement("span");
             dot.classList.add("dot");
 
             if (index === currentSlide) {
